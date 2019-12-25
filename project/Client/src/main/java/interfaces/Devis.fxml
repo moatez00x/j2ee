@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.DevisController">
+   <children>
+      <AnchorPane layoutX="230.0" layoutY="75.0" prefHeight="550.0" prefWidth="695.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="695.0" layoutX="71.0" layoutY="54.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../image/Grafimedia-Pay-online.jpg" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="produit" layoutX="42.0" layoutY="79.0" onAction="#combochange" prefHeight="37.0" prefWidth="182.0" promptText="Product" />
+            <TextField fx:id="qntity" alignment="CENTER" layoutX="42.0" layoutY="156.0" onKeyTyped="#quantitycontroll" prefHeight="37.0" prefWidth="182.0" promptText="Quantity">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="unitprice" alignment="CENTER" editable="false" layoutX="42.0" layoutY="207.0" prefHeight="37.0" prefWidth="182.0" promptText="Unit Price">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="totalbefore" alignment="CENTER" editable="false" layoutX="45.0" layoutY="257.0" prefHeight="37.0" prefWidth="182.0" promptText="Total Before tax">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tva" alignment="CENTER" editable="false" layoutX="45.0" layoutY="313.0" prefHeight="37.0" prefWidth="77.0" promptText="TVA" text="TVA:7%">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="total" alignment="CENTER" editable="false" layoutX="136.0" layoutY="313.0" prefHeight="37.0" prefWidth="90.0" promptText="Total ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="cost" layoutX="57.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#calculate" prefHeight="50.0" prefWidth="152.0" style="-fx-background-color: #9ba6a7; -fx-background-radius: 25;" text="Cost">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="62.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_US_Dollar_50px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="253.0" layoutY="28.0" text="Sales Management">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="pay" layoutX="57.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#payment" prefHeight="50.0" prefWidth="152.0" style="-fx-background-color: #9ba6a7; -fx-background-radius: 25;" text="Pay">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="57.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Cash_in_Hand_48px_1.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="sales" layoutX="291.0" layoutY="134.0" onMouseClicked="#selectsale" prefHeight="200.0" prefWidth="404.0" style="-fx-background-color: transparent;">
+              <columns>
+                <TableColumn fx:id="item" prefWidth="75.0" text="Item" />
+                <TableColumn fx:id="tabquantity" prefWidth="75.0" text="Quantity" />
+                  <TableColumn fx:id="amountbefore" prefWidth="136.0" text="Amount before taxes" />
+                  <TableColumn fx:id="finalamount" prefWidth="136.0" text="Final Amount" />
+              </columns>
+            </TableView>
+            <Label layoutX="451.0" layoutY="91.0" prefHeight="37.0" prefWidth="84.0" text="Sales " textFill="#09ff7c">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="print" layoutX="381.0" layoutY="348.0" mnemonicParsing="false" onAction="#printsale" prefHeight="50.0" prefWidth="152.0" style="-fx-background-color: #9ba6a7; -fx-background-radius: 25;" text="Print">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="543.0" layoutY="348.0" mnemonicParsing="false" onAction="#deletesale" prefHeight="50.0" prefWidth="152.0" style="-fx-background-color: #9ba6a7; -fx-background-radius: 25;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="397.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Print_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="39.0" layoutX="562.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Delete_48px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="idoperator" layoutX="564.0" layoutY="28.0" prefHeight="22.0" prefWidth="19.0" text="2" visible="false" />
+            <TextField fx:id="ClientCin" alignment="CENTER" layoutX="45.0" layoutY="419.0" onKeyTyped="#cincontroll" prefHeight="37.0" prefWidth="182.0" promptText="CIN">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label fx:id="quantityleft" layoutX="45.0" layoutY="120.0" prefHeight="28.0" prefWidth="182.0" textFill="#2fff63">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="550.0" prefWidth="108.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="back" fitHeight="92.0" fitWidth="77.0" layoutX="16.0" layoutY="29.0" onMouseClicked="#backk" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

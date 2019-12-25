@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.sellPointsController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="800.0" layoutX="324.0" layoutY="49.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/07-iphone-xs-and-iphone-xs-max.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="550.0" prefWidth="89.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="add_butt" fitHeight="68.0" fitWidth="65.0" layoutX="12.0" layoutY="28.0" onMouseClicked="#add_sell" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Plus_48px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="productbutt" fitHeight="63.0" fitWidth="59.0" layoutX="15.0" layoutY="313.0" onMouseClicked="#gotoproduct" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Add_Shopping_Cart_50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delete_butt" fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="107.0" onMouseClicked="#delete_sell" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Delete_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="refresh_butt" fitHeight="50.0" fitWidth="50.0" layoutX="18.0" layoutY="182.0" onMouseClicked="#refresh_page" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Refresh_48px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_sell" layoutX="204.0" layoutY="79.0" onMouseClicked="#clientup" prefHeight="222.0" prefWidth="386.0">
+        <columns>
+          <TableColumn fx:id="saleid" prefWidth="121.60003662109375" text="Sale Point ID " />
+          <TableColumn fx:id="salelocation" prefWidth="132.79998779296875" text="Location" />
+            <TableColumn fx:id="salephone" prefWidth="132.0" text="Phone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="recherchefield" layoutX="205.0" layoutY="36.0" prefHeight="26.0" prefWidth="386.0" />
+      <TableView fx:id="table_client" layoutX="204.0" layoutY="317.0" prefHeight="140.0" prefWidth="386.0">
+         <columns>
+            <TableColumn fx:id="clientname" prefWidth="121.60003662109375" text="Client Name" />
+            <TableColumn fx:id="clientsurname" prefWidth="132.79998779296875" text="Client Surname" />
+            <TableColumn fx:id="clientid" prefWidth="132.0" text="Client ID" />
+         </columns>
+      </TableView>
+      <TextField fx:id="newsalelocation" layoutX="608.0" layoutY="138.0" prefHeight="39.0" prefWidth="200.0" promptText="Location" style="-fx-prompt-text-fill: black; -fx-background-color: TRANSPARENGT;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="608.0" layoutY="177.0" prefHeight="10.0" prefWidth="188.0" style="-fx-background-color: black;" />
+      <TextField fx:id="newsalephone" layoutX="608.0" layoutY="197.0" prefHeight="39.0" prefWidth="200.0" promptText="price" style="-fx-prompt-text-fill: black; -fx-background-color: TRANSPARENGT;" text="Phone">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="608.0" layoutY="231.0" prefHeight="10.0" prefWidth="188.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

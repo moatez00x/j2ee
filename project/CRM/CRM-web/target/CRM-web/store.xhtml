@@ -1,0 +1,57 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="template.xhtml"
+		xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+     
+      <ui:define name="content">
+      		
+
+<body >
+ 	<div class="showcase block block-border-bottom-grey">
+	<div class="container">
+	<center>
+	<h3>   project1     </h3>
+	<br></br>
+	<h3>    project2   </h3>
+	    <a href="https://bootstrapmade.com" class="btn btn-more large i-right">Compare <i class="fa fa-plus"></i></a>
+	</center>
+	</div></div>
+
+
+
+
+
+  <div class="showcase block block-border-bottom-grey">
+      <div class="container">
+  
+         <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
+         <ui:repeat value="#{serviceBeans.bills}" var="b">
+          <div class="item">
+          
+            <a href="#" class="overlay-wrapper">
+                <img src="img/showcase/project1.png" alt="Project 1 image" class="img-responsive underlay"></img>
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">#{b.name}</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="#">#{b.name}</a>
+                </h4>
+              <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
+            </div>
+          </div>
+           </ui:repeat>
+      </div>
+      </div>
+      </div>
+
+</body>
+		
+	</ui:define>
+
+</ui:composition>
+      

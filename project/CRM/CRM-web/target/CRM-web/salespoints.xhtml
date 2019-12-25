@@ -1,0 +1,42 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition template="template.xhtml"
+		xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+     
+      <ui:define name="content">
+      		
+
+<body >
+
+			
+				<h:dataTable  class="table table-bordered" value="#{salespointsBean.ls}" var="salespoint"
+					border="1">
+					<h:column>
+						<f:facet name="header"><h:outputText value="Sales Point Reference" /></f:facet>
+						<h:outputText value="#{salespoint.idsales}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header"><h:outputText value="location" /></f:facet>
+						<h:outputText value="#{salespoint.location}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header"><h:outputText value="phone" /></f:facet>
+						<h:outputText value="#{salespoint.phone}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header"><h:outputText value="horaire" /></f:facet>
+						<h:outputText value="#{salespoint.horaire}" />
+					</h:column>
+					 
+				</h:dataTable>
+				
+
+</body>
+		
+	</ui:define>
+
+</ui:composition>
+      

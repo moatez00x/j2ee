@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Client/src/main/java"/>
+	<classpathentry kind="src" path="CRM/CRM-ejb/src/main/java"/>
+	<classpathentry kind="lib" path="CRM/CRM-ear/target/CRM-ear/CRM-ejb.jar"/>
+	<classpathentry kind="lib" path="CRM/CRM-ejb/target/CRM-ejb.jar"/>
+	<classpathentry kind="lib" path="CRM/CRM-web/target/CRM-web/WEB-INF/lib/primefaces-5.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="CRM/CRM-ejb/target/classes"/>
+</classpath>

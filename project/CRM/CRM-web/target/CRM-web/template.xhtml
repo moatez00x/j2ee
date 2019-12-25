@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+<meta charset="utf-8"></meta>
+ 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+  <meta content="" name="keywords">>/</meta>
+  <meta content="" name="description"></meta>
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content=""></meta>
+  <meta property="og:image" content=""></meta>
+  <meta property="og:url" content=""></meta>
+  <meta property="og:site_name" content=""></meta>
+  <meta property="og:description" content=""></meta>
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:site" content=""></meta>
+  <meta name="twitter:title" content=""></meta>
+  <meta name="twitter:description" content=""></meta>
+  <meta name="twitter:image" content=""></meta>
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/icons/favicon.png"></link>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png"></link>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png"></link>
+  <link rel="apple-touch-icon-precomposed" href="img/icons/default.png"></link>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet"></link>
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"></link>
+  <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet"></link>
+  <link href="lib/owlcarousel/owl.theme.min.css" rel="stylesheet"></link>
+  <link href="lib/owlcarousel/owl.transitions.min.css" rel="stylesheet"></link>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet"></link>
+
+  <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
+  <link href="#" id="colour-scheme" rel="stylesheet"></link>
+</h:head> 
+<body> 
+ <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
+  <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
+
+    <!-- ======== @Region: #navigation ======== -->
+    <div id="navigation" class="wrapper">
+      <!--Hidden Header Region-->
+      <div class="header-hidden collapse">
+        <div class="header-hidden-inner container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>
+                  About Us
+                </h3>
+              <p>Phone prospecting Commercial development Direct marketing </p>
+              <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i> Learn more</a>
+            </div>
+            <div class="col-md-3">
+              <!--@todo: replace with company contact details-->
+              <h3>
+                  Contact Us
+                </h3>
+              
+            </div>
+            <div class="col-md-6">
+              <!--Colour & Background Switch for demo - @todo: remove in production-->
+              <h3>
+                  Theme Variations
+                </h3>
+              <div class="switcher">
+                <div class="cols">
+                  Backgrounds:
+                  <br></br>
+                  <a href="#benches" class="background benches active" title="Benches">Benches</a> <a href="#boots" class="background boots " title="Boots">Boots</a> <a href="#buildings" class="background buildings " title="Buildings">Buildings</a>
+                  <a
+                    href="#city" class="background city " title="City">City</a> <a href="#metro" class="background metro " title="Metro">Metro</a>
+                </div>
+                <div class="cols">
+                  Colours:
+                  <br></br>
+                  <a href="#orange" class="colour orange active" title="Orange">Orange</a> <a href="#green" class="colour green " title="Green">Green</a> <a href="#blue" class="colour blue " title="Blue">Blue</a> <a href="#lavender" class="colour lavender "
+                    title="Lavender">Lavender</a>
+                </div>
+              </div>
+              <p>
+                <small>Selection is not persistent.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Header & navbar-branding region-->
+      <div class="header">
+        <div class="header-inner container">
+          <div class="row">
+            <div class="col-md-8">
+              <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
+              <a class="navbar-brand" href="index.html" title="Home">
+                <h1 class="hidden">
+                    <img src="img/logo.png" alt="Flexor Logo"></img>
+                    Valhala CRM
+                  </h1>
+              </a>
+              <div class="navbar-slogan">
+                Valhala CRM officiel website
+                <br></br> By Valhala
+              </div>
+            </div>
+            <!--header rightside-->
+            <div class="col-md-4">
+              <!--user menu-->
+              <ul class="list-inline user-menu pull-right">
+                <li class="user-button"><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
+              </ul>
+              <ul class="list-inline user-menu pull-right">
+                <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="register.html" class="text-uppercase">Register</a></li>
+                <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="login.html" class="text-uppercase">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="navbar navbar-default">
+          <!--mobile collapse menu button-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!--social media icons-->
+          <div class="navbar-text social-media social-media-inline pull-right">
+            <!--@todo: replace with company social media details-->
+            
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </div>
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="main-menu">
+              <li class="icon-link">
+                <a href="index.html"><i class="fa fa-home"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header"></li>
+                  <li><a href="elements.html" tabindex="-1" class="menu-item">ahmed</a></li>
+                  <li><a href="about.html" tabindex="-1" class="menu-item">sinda</a></li>
+                  <li><a href="login.html" tabindex="-1" class="menu-item">ouiem</a></li>
+                  
+                  
+                </ul>
+              </li>
+              
+              <li class="dropdown dropdown-mm">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu-mm dropdown-menu-persist">
+                  <li class="row">
+                    <ul class="col-md-6">
+                      <li class="dropdown-header"></li>
+                      <li><a href="#">malek</a></li>
+                      <li><a href="#">mootaz</a></li>
+                      <li><a href="#">mtimet</a></li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+    </div>
+
+<section class="section">
+			<ui:insert name="content">
+			
+			<h1>this is a  template  page</h1>
+			<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D
+			uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+			Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D
+			uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+			Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D
+			uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+			Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D
+			uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+			Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D
+			uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+			</p>
+			
+			
+			</ui:insert>
+			</section>
+<!-- ======== @Region: #footer ======== -->
+  <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="img/bg_footer-map.png" data-stellar-background-ratio="0.4">
+    <div class="container">
+
+      <div class="row" id="contact">
+
+        <div class="col-md-3">
+          
+        </div>
+
+        
+
+        <div class="col-md-3">
+          <h4 class="text-uppercase">
+              Follow Us On:
+            </h4>
+          <!--social media icons-->
+          <div class="social-media social-media-stacked">
+            <!--@todo: replace with company social media details-->
+            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+            <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+            <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row subfooter">
+        <!--@todo: replace with company copyright details-->
+        <div class="col-md-7">
+          <p>Copyright © Flexor Theme</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flexor
+            -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <ul class="list-inline pull-right">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#top" class="scrolltop">Top</a>
+
+    </div>
+  </footer>
+
+ <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <!--Custom scripts demo background & colour switcher - OPTIONAL -->
+  <script src="js/color-switcher.js"></script>
+
+  <!--Contactform script -->
+  <script src="contactform/contactform.js"></script>
+</body> 
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.stat_productController">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="94.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="back_stat" fitHeight="58.0" fitWidth="59.0" layoutX="18.0" layoutY="236.0" onMouseClicked="#goto_prod" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Go_Back_48px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="550.0" fitWidth="706.0" layoutX="94.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/1453063198-imageco.jpeg" />
+         </image>
+      </ImageView>
+      <BarChart fx:id="LineChart" layoutX="174.0" layoutY="75.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" fx:id="x" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="y" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <ImageView fx:id="stats" fitHeight="77.0" fitWidth="83.0" layoutX="395.0" layoutY="4.0" onMouseClicked="#start_stat" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/kisspng-bar-chart-statistics-computer-icons-clip-art-business-statistics-5b32ed421d3748.0083438515300641941197.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
